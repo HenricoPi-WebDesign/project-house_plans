@@ -1,0 +1,272 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(Img/000icons/home.png);
+	background-position: center;
+	background-size: cover;
+	padding-left: 8%;
+	padding-right: 8%;
+	box-sizing: border-box;
+}
+
+.navbar{
+	height: 12%;
+	display: flex;
+	align-items: center;
+}
+
+.logo{
+	width: 12vh;
+	cursor: pointer;
+	padding-top: 30px;
+}
+
+.menu-icon{
+	width: 6vh;
+	cursor: pointer;
+	padding-top: 30px;
+	margin-left: 60px;
+}
+
+nav{
+	flex: 1;
+	text-align: right;
+}
+
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 60px;
+}
+
+
+nav ul li a .btn{
+	width: 25vh;
+	background: transparent;
+	color: #fff;
+	cursor: pointer;
+	border: 2px solid #fff;
+}
+
+nav ul li a .btn:hover{
+	background: #fff;
+	color: #001730;
+	font-weight: bold;
+	transition: 0.5s;
+}
+
+button{
+	width: 180px;
+	color: #000;
+	font-size: 12px;
+	padding: 12px 0;
+	background: #fff;
+	border: 0;
+	border-radius: 12px;
+	outline: none;
+	margin-top: 30px;
+}
+
+.row{
+	display: flex;
+	height: 88%;
+	align-items: center;
+}
+
+.col{
+	flex-basis: 50%;
+}
+
+.col img{
+	width: 80%;
+	border-radius: 12px;
+}
+
+h1{
+	width: 14vh;
+	height: 10vh;
+	color: #FFF;
+	font-size: 60px;
+	margin-bottom: 10px;
+}
+
+h3{
+	color: #fff;
+	text-align: left;
+	padding-left: 23%;
+	padding-bottom: 5%;
+}
+
+p{
+	color: #FFF;
+	font-size: 15px;
+	line-height: 15px;
+	margin-top: 10px;
+	padding-top: 25px;
+}
+
+.card{
+	width: 12vh;
+	height: 12vh;
+	display: inline-block;
+	border-radius: 40px;
+	padding: 33px 0px;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 30px 75px;
+	background-position: center;
+	background-size: cover;
+	transition: transform 0.5s;
+}
+
+.card1{
+	background-image: url(Img/000icons/001blackrock.png);
+}
+
+.card2{
+	background-image: url(Img/000icons/002honeydew.png);
+}
+
+.card3{
+	background-image: url(Img/000icons/003frostwell.png);
+}
+
+.card4{
+	background-image: url(Img/000icons/004sanoma.png);
+}
+
+.card:hover{
+	transform: translateY(-10px);
+}
+
+h5{
+	color: #fff;
+	text-shadow: 0 0 5px #999;
+	text-align: center;
+}
+
+.card p{
+	text-shadow: 0 0 15px #000;
+	font-size: 8;
+}
+
+footer{
+	background-color: transparent;
+
+	position: fixed;
+	margin-left: 30%;
+	margin-top: 35%;
+}
+
+footer p{
+	boder-top: 2px solid #fff;
+}
+
+footer p a{
+	text-decoration: none;
+	color: #fff;
+}
+
+footer p a:hover{
+	color: #fff;
+	text-decoration: underline #fff;
+}
+
+@media screen and  (max-width: 1200px){
+	
+	.container{
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(Img/000icons/mobile.png);
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	}
+
+	.navbar{
+		width: 100%;
+		display: inline-block;
+		margin: auto;
+		padding-top: 50px;
+	}
+
+	.navbar .logo{
+		float: right;
+		padding-right: 50%;
+	}
+
+	nav ul li{
+		width: 100%;
+	}
+
+	nav ul li a{
+		float: left;
+		position: inherit;
+		display: inline-block;
+		margin-left: 1px;
+	}
+
+	.row{
+		width: 100%;
+		display: block;
+		margin: auto;
+		padding-top: 50px;
+	}
+
+	.col{
+		float:inline-start;
+		width: 100%;
+		display:grid;
+		margin: auto;
+	}
+
+	.col h1{
+		color: transparent;
+	}
+
+	.col p{
+		color: transparent;
+	}
+	.content-section{
+		float: none;
+		width: 100%;
+		display: block;
+		margin: auto;
+	}
+	.image-section{
+		float: none;
+		width: 100%;
+	}
+	.image-section img{
+		width: 100%;
+		height: auto;
+		display: block;
+		margin: auto;
+	}
+	.content-section .title{
+		text-align: center;
+		font-size: 19px;
+	}
+	.content-section .content .button{
+		text-align: center;
+	}
+	.content-section .content .button a{
+		padding: 9px 30px;
+	}
+	.content-section .social{
+		text-align: center;
+	}
+/*
+	footer{
+		text-align: center;
+	}
+
+	footer p a{
+
+	}
+*/
+}

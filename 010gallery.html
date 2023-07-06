@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Gallery</title>
+		<link rel="stylesheet" href="010gallery.css">
+		
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+</head>
+<body>
+
+<p><br></p>
+
+<header>
+      <a href="home.html"><button click="history.back()" class="btn">Return to Previous</button></a>
+</header>
+
+		<div class="container">
+
+	<!-- Slider main container -->
+	<div class="swiper">
+
+ 		 <!-- Additional required wrapper -->
+ 		<div class="swiper-wrapper">
+    			<!-- Slides -->
+          <div class="swiper-slide"><img src="Img/005gallery/resized/001.jpg"></div>
+          <div class="swiper-slide"><img src="Img/005gallery/resized/002.jpg"></div>
+          <div class="swiper-slide"><img src="Img/005gallery/resized/003.jpg"></div>
+          <div class="swiper-slide"><img src="Img/005gallery/resized/004.jpg"></div>
+          <div class="swiper-slide"><img src="Img/005gallery/resized/005.jpg"></div>
+          <div class="swiper-slide"><img src="Img/005gallery/resized/006.jpg"></div>
+          <div class="swiper-slide"><img src="Img/005gallery/resized/007.jpg"></div>
+          <div class="swiper-slide"><img src="Img/005gallery/resized/008.jpg"></div>
+          <div class="swiper-slide"><img src="Img/005gallery/resized/009.jpg"></div>
+          <div class="swiper-slide"><img src="Img/005gallery/resized/010.jpg"></div>
+          <div class="swiper-slide"><img src="Img/005gallery/resized/011.jpg"></div>
+          <div class="swiper-slide"><img src="Img/005gallery/resized/012.jpg"></div>
+          <div class="swiper-slide"><img src="Img/005gallery/resized/013.jpg"></div>
+          <div class="swiper-slide"><img src="Img/005gallery/resized/014.jpg"></div>
+          <div class="swiper-slide"><img src="Img/005gallery/resized/015.jpg"></div>
+          <div class="swiper-slide"><img src="Img/005gallery/resized/016.jpg"></div>
+          <div class="swiper-slide"><img src="Img/005gallery/resized/017.jpg"></div>
+          <div class="swiper-slide"><img src="Img/005gallery/resized/018.jpg"></div>
+          <div class="swiper-slide"><img src="Img/005gallery/resized/019.jpg"></div>
+		  <div class="swiper-slide"><img src="Img/005gallery/resized/020.jpg"></div>
+		  <div class="swiper-slide"><img src="Img/005gallery/resized/021.jpg"></div>
+		  <div class="swiper-slide"><img src="Img/005gallery/resized/022.jpg"></div>
+		  <div class="swiper-slide"><img src="Img/005gallery/resized/023.jpg"></div>
+		  <div class="swiper-slide"><img src="Img/005gallery/resized/024.jpg"></div>
+		  <div class="swiper-slide"><img src="Img/005gallery/resized/025.jpg"></div>
+		  <div class="swiper-slide"><img src="Img/005gallery/resized/026.jpg"></div>
+		  <div class="swiper-slide"><img src="Img/005gallery/resized/027.jpg"></div>
+ 		</div>
+
+  		<!-- If we need pagination -->
+  		<div class="swiper-pagination"></div>
+
+  		<!-- If we need navigation buttons -->
+  		<div class="swiper-button-prev"></div>
+  		<div class="swiper-button-next"></div>
+
+	</div>
+
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+		<script>  
+			const swiper = new Swiper('.swiper', {
+  			autoplay: {
+  				delay: 3000,
+  				disableOnInteraction: false,
+  			},
+ 			 loop: true,
+
+ 			 pagination: {
+ 			   el: '.swiper-pagination',
+ 			   clickable: true,
+			  },
+
+  				navigation: {
+ 		  		 nextEl: '.swiper-button-next',
+  		  		prevEl: '.swiper-button-prev',
+ 				 },
+					});
+		</script>
+
+</body>
+
+</html>
